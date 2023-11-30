@@ -26,10 +26,12 @@ body {
 
 .body {
   aspect-ratio: auto;
-  object-fit: fill;
+  -webkit-text-fill-color: inherit;
+  object-fit: contain;
   background-image: url('../images/Adobe-Express-2023-11-28-22.06.42.gif');
   background-position: 0 0;
   background-size: cover;
+  background-clip: padding-box;
   overflow: hidden;
 }
 
@@ -189,6 +191,10 @@ body {
 }
 
 .footer {
+  -webkit-text-fill-color: inherit;
+  object-fit: fill;
+  object-position: 50% 0%;
+  background-clip: border-box;
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 0;
@@ -232,6 +238,7 @@ body {
 
 .lottie-animation {
   text-align: center;
+  object-fit: fill;
   margin-top: .625rem;
   padding-top: 0;
 }
