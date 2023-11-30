@@ -219,7 +219,7 @@ body {
 
 .secret-footer {
   display: none;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .form {
@@ -355,6 +355,13 @@ body {
   display: block;
 }
 
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 0 0;
+  background-size: auto;
+}
+
 @media screen and (max-width: 767px) {
   .link-1 {
     object-fit: fill;
@@ -443,6 +450,10 @@ body {
   }
 
   .spacer.bottom {
+    display: block;
+  }
+
+  .secret-footer {
     display: none;
   }
 
