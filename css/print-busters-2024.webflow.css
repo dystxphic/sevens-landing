@@ -27,9 +27,10 @@ body {
 .body {
   aspect-ratio: auto;
   -webkit-text-fill-color: inherit;
-  object-fit: contain;
+  object-fit: fill;
   background-image: url('../images/Adobe-Express-2023-11-28-22.06.42.gif');
-  background-position: 0 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
   overflow: hidden;
@@ -87,7 +88,7 @@ body {
 .heading {
   float: left;
   clear: left;
-  filter: brightness(200%) sepia() blur(.015625rem);
+  filter: brightness(200%) sepia();
   margin-left: 0;
   font-family: Budmo Jiggler, Palatino Linotype, sans-serif;
   font-size: 1.5625rem;
@@ -124,7 +125,7 @@ body {
 
 .image {
   clear: none;
-  filter: brightness(200%) sepia(50%);
+  filter: brightness(150%) sepia();
   position: static;
 }
 
@@ -142,7 +143,7 @@ body {
 
 .heading-2 {
   clear: right;
-  filter: brightness(200%) sepia() blur(.015625rem);
+  filter: brightness(200%) sepia();
   font-family: Budmo Jiggler, Palatino Linotype, sans-serif;
   font-size: 1.5625rem;
   font-weight: 400;
@@ -166,7 +167,7 @@ body {
 }
 
 .heading-3 {
-  filter: brightness(200%) sepia() blur(.015625rem);
+  filter: brightness(200%) sepia();
   color: #fff;
   text-align: left;
   margin-left: auto;
@@ -178,7 +179,7 @@ body {
 }
 
 .heading-4 {
-  filter: brightness(200%) sepia() blur(.015625rem);
+  filter: brightness(200%) sepia();
   color: #fff;
   justify-content: flex-end;
   margin-left: auto;
@@ -237,6 +238,7 @@ body {
 }
 
 .lottie-animation {
+  filter: brightness(150%) sepia(75%);
   text-align: center;
   object-fit: fill;
   margin-top: .625rem;
@@ -362,6 +364,12 @@ body {
   background-size: auto;
 }
 
+@media screen and (max-width: 991px) {
+  .body {
+    background-attachment: fixed;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .link-1 {
     object-fit: fill;
@@ -441,11 +449,32 @@ body {
 @media screen and (max-width: 479px) {
   .body {
     aspect-ratio: auto;
-    object-fit: contain;
-    overflow: visible;
+    object-fit: fill;
+    background-position: 50%;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    display: block;
+    overflow: hidden;
   }
 
-  .heading, .heading-2, .heading-3, .heading-4 {
+  .link-1 {
+    padding-right: 10px;
+  }
+
+  .heading {
+    clear: left;
+    font-size: 150%;
+  }
+
+  .heading:hover {
+    font-size: 150%;
+  }
+
+  .column-3 {
+    padding-right: 0;
+  }
+
+  .heading-2, .heading-3, .heading-4 {
     font-size: 150%;
   }
 
@@ -453,8 +482,13 @@ body {
     display: block;
   }
 
+  .spacer.top {
+    padding-bottom: 13rem;
+  }
+
   .secret-footer {
     display: none;
+    overflow: hidden;
   }
 
   .lottie-animation {
@@ -491,6 +525,13 @@ body {
     font-size: 90%;
   }
 
+  .container-2 {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
   .container-3 {
     max-width: 200%;
     line-height: 500%;
@@ -498,6 +539,11 @@ body {
 
   .columns-2 {
     display: flex;
+  }
+
+  .container-6 {
+    padding-left: 10px;
+    padding-right: 0;
   }
 
   .ikonik-u0hrc {
@@ -523,7 +569,9 @@ body {
   }
 
   .container-8 {
-    padding-left: 10px;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
