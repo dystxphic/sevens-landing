@@ -199,6 +199,11 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 0;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .spacer {
@@ -212,6 +217,7 @@ body {
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: block;
+  position: relative;
 }
 
 .spacer.top {
@@ -220,6 +226,11 @@ body {
 
 .secret-footer {
   display: none;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
   overflow: visible;
 }
 
@@ -357,11 +368,29 @@ body {
   display: block;
 }
 
+.column-7 {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+}
+
 .button {
   background-color: rgba(0, 0, 0, 0);
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 0 0;
   background-size: auto;
+}
+
+.link-block, .link-block-2 {
+  display: none;
+}
+
+.link-block-3 {
+  display: block;
 }
 
 @media screen and (max-width: 991px) {
@@ -492,6 +521,14 @@ body {
 
   .heading-2, .heading-3, .heading-4 {
     font-size: 1.25rem;
+  }
+
+  .footer {
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .spacer.bottom {
