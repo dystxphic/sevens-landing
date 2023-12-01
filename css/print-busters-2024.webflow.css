@@ -125,7 +125,7 @@ body {
 
 .image {
   clear: none;
-  filter: brightness(150%) sepia();
+  filter: brightness(125%) sepia(50%);
   position: static;
 }
 
@@ -238,7 +238,7 @@ body {
 }
 
 .lottie-animation {
-  filter: brightness(150%) sepia(75%);
+  filter: brightness(125%) sepia(60%);
   text-align: center;
   object-fit: fill;
   margin-top: .625rem;
@@ -264,7 +264,7 @@ body {
   -webkit-text-fill-color: inherit;
   object-fit: fill;
   background-color: rgba(0, 0, 0, 0);
-  background-clip: content-box;
+  background-clip: border-box;
   border: .0625rem solid rgba(0, 0, 0, 0);
   border-radius: 0;
   margin-bottom: 0;
@@ -384,6 +384,7 @@ body {
 
   .heading {
     margin-left: 0;
+    padding-right: 20px;
   }
 
   .column-2 {
@@ -403,6 +404,16 @@ body {
     padding-left: 0;
     padding-right: 10px;
     display: flex;
+  }
+
+  .spacer.bottom {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .spacer.top {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .text-field {
@@ -463,11 +474,16 @@ body {
 
   .heading {
     clear: left;
-    font-size: 150%;
+    padding-right: 10px;
+    font-size: 1.25rem;
   }
 
   .heading:hover {
-    font-size: 150%;
+    font-size: 1.25rem;
+  }
+
+  .image {
+    filter: brightness(125%) sepia(50%);
   }
 
   .column-3 {
@@ -475,15 +491,18 @@ body {
   }
 
   .heading-2, .heading-3, .heading-4 {
-    font-size: 150%;
+    font-size: 1.25rem;
   }
 
   .spacer.bottom {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
     display: block;
   }
 
   .spacer.top {
-    padding-bottom: 13rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .secret-footer {
@@ -509,20 +528,21 @@ body {
 
   .text-field {
     width: 100%;
-    flex: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 90%;
+    flex: 1;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: .75rem;
   }
 
   .form-2 {
+    text-align: center;
     display: flex;
   }
 
   .submit-button {
-    padding-left: 10px;
+    padding-left: 0;
     padding-right: 20px;
-    font-size: 90%;
+    font-size: .75rem;
   }
 
   .container-2 {
@@ -554,7 +574,12 @@ body {
     display: flex;
   }
 
-  .container-7, .form-block {
+  .container-7 {
+    display: block;
+  }
+
+  .form-block {
+    text-align: center;
     display: block;
   }
 
@@ -572,6 +597,11 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .container-9 {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
