@@ -1324,7 +1324,10 @@ body {
 .image-7 {
   display: block;
   position: absolute;
-  top: 100px;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .container-13 {
@@ -1365,10 +1368,10 @@ body {
 .image-8 {
   display: block;
   position: absolute;
-  top: 100px;
-  bottom: auto;
-  left: auto;
-  right: auto;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .link-block-4 {
@@ -1380,6 +1383,7 @@ body {
   text-align: center;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 150%;
+  position: relative;
 }
 
 .image-9 {
@@ -1425,9 +1429,27 @@ body {
     background-clip: border-box;
   }
 
+  .image-7 {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
   .body-3 {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+  }
+
+  .image-8 {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .heading-6 {
+    font-size: 1.5rem;
   }
 
   .image-9 {
@@ -1447,6 +1469,10 @@ body {
 
   .body-2 {
     object-fit: contain;
+  }
+
+  .heading-6 {
+    font-size: 1rem;
   }
 
   .image-9 {
@@ -1715,7 +1741,11 @@ body {
   }
 
   .body-2 {
+    -webkit-text-fill-color: inherit;
+    background-color: #000;
+    background-clip: border-box;
     margin-top: 0;
+    overflow: hidden;
   }
 
   .button-12 {
@@ -1794,7 +1824,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    top: 0%;
+    top: 2.5%;
     bottom: auto;
     left: 0%;
     right: 0%;
@@ -1809,8 +1839,8 @@ body {
     margin-top: 0;
     display: block;
     position: absolute;
-    top: -50px;
-    bottom: auto;
+    top: 0%;
+    bottom: 0%;
     left: 0%;
     right: 0%;
   }
